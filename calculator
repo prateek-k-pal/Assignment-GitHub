@@ -1,0 +1,35 @@
+#include<stdio.h>
+void
+main ()
+{
+  int a, b, var;
+  char ch;
+  printf ("\nEnter any one operator +, -, *, / = ");
+  scanf ("%c", &ch);
+  printf ("\nOperator entered +, -, *, / = a%cb",ch);
+  printf ("\nEnter number a = ");
+  scanf ("%d", &a);
+  printf ("\nEnter number b = ");
+  scanf ("%d", &b);
+  switch (ch)
+    {
+    case '+':
+      printf ("\nSum of a and b = %d", a + b);
+      break;
+    case '-':
+      printf ("\nDifference of a and b = %d", a - b);
+      break;
+    case '*':
+      printf ("\nProduct of a and b = %d", a * b);
+      break;
+    case '/':
+      printf ("\nQuotient of a and b = %d", a / b);
+      printf ("\nRemainder of a and b = %d", a % b);
+      break;
+    default:
+      printf ("\nInvalid input");
+      break;
+    }
+}
+
+
